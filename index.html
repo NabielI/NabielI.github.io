@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body class="bg-slate-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#home" class="text-2xl font-bold text-white tracking-tight">PORTFOLIO</a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-slate-300 hover:text-orange-500 transition-colors font-medium">HOME</a>
+                    <a href="#projects" class="text-slate-300 hover:text-orange-500 transition-colors font-medium">PROJECTS</a>
+                    <a href="#about" class="text-slate-300 hover:text-orange-500 transition-colors font-medium">ABOUT</a>
+                    <a href="#contact" class="text-slate-300 hover:text-orange-500 transition-colors font-medium">CONTACT</a>
+                </div>
+
+                <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg hover:bg-slate-800 text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden border-t border-slate-700 bg-slate-900">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#home" class="block px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-orange-500">HOME</a>
+                <a href="#projects" class="block px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-orange-500">PROJECTS</a>
+                <a href="#about" class="block px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-orange-500">ABOUT</a>
+                <a href="#contact" class="block px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-orange-500">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 animated-gradient opacity-30"></div>
+        <div class="absolute inset-0" style="background-image: linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px); background-size: 50px 50px;"></div>
+        <div class="absolute top-0 left-0 w-1 h-96 gradient-bg opacity-50"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-1 gradient-bg opacity-50"></div>
+        
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <div class="mb-6 fade-in-up">
+                <span class="inline-block px-6 py-2 sharp-card glass-dark text-orange-500 text-sm font-bold backdrop-blur-sm tracking-wider">
+                    ⚡ OPEN FOR OPPORTUNITIES
+                </span>
+            </div>
+            <h1 class="text-5xl sm:text-6xl lg:text-8xl font-black mb-6 fade-in-up tracking-tight" style="animation-delay: 0.2s;">
+                <span class="text-white">NABIEL</span>
+                <br>
+                <span class="gradient-text">ISCHAK</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-slate-400 mb-10 max-w-3xl mx-auto leading-relaxed fade-in-up font-light" style="animation-delay: 0.4s;">
+                Building powerful digital experiences with <span class="text-orange-500 font-semibold">bold design</span> and <span class="text-cyan-500 font-semibold">innovative solutions</span>
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in-up" style="animation-delay: 0.6s;">
+                <a href="#projects" class="group inline-flex items-center justify-center px-8 py-4 gradient-bg text-white rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 font-bold text-lg uppercase tracking-wider sharp-card">
+                    View Projects
+                    <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+                <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-orange-500 text-orange-500 rounded-lg hover:bg-orange-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1 font-bold text-lg uppercase tracking-wider sharp-card">
+                    Contact Me
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto fade-in-up" style="animation-delay: 0.8s;">
+                <div class="text-center">
+                    <p class="text-4xl font-black text-orange-500 mb-2">50+</p>
+                    <p class="text-slate-400 text-sm uppercase tracking-wider">Projects</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-black text-cyan-500 mb-2">5+</p>
+                    <p class="text-slate-400 text-sm uppercase tracking-wider">Years Exp</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-black text-blue-500 mb-2">30+</p>
+                    <p class="text-slate-400 text-sm uppercase tracking-wider">Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl font-black text-white mb-4 uppercase tracking-tight">Featured Work</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto mb-4"></div>
+                <p class="text-slate-400">Selected projects that showcase my expertise</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterProjects('all', event)" class="filter-btn px-6 py-3 sharp-card gradient-bg text-white font-bold uppercase text-sm tracking-wider transition-all">
+                    All
+                </button>
+                <button onclick="filterProjects('web', event)" class="filter-btn px-6 py-3 sharp-card bg-slate-700 text-slate-300 hover:bg-slate-600 font-bold uppercase text-sm tracking-wider transition-all">
+                    Web Design
+                </button>
+                <button onclick="filterProjects('uiux', event)" class="filter-btn px-6 py-3 sharp-card bg-slate-700 text-slate-300 hover:bg-slate-600 font-bold uppercase text-sm tracking-wider transition-all">
+                    UI/UX
+                </button>
+                <button onclick="filterProjects('branding', event)" class="filter-btn px-6 py-3 sharp-card bg-slate-700 text-slate-300 hover:bg-slate-600 font-bold uppercase text-sm tracking-wider transition-all">
+                    Branding
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-item web group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-orange-500 transition-all duration-500 hover-lift">
+                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                        <img src="https://images.unsplash.com/photo-1764601842171-3d6fba7c3830?w=800" alt="Modern Web Platform" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-orange-500 font-bold uppercase text-sm">View Project →</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 text-xs font-bold gradient-bg text-white sharp-card uppercase">Web</span>
+                            <span class="text-sm text-slate-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Modern Web Platform</h3>
+                        <p class="text-slate-400 text-sm">SaaS platform redesign focusing on user experience</p>
+                    </div>
+                </div>
+
+                <div class="project-item uiux group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-blue-500 transition-all duration-500 hover-lift">
+                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                        <img src="https://images.unsplash.com/photo-1707836868495-3307d371aba4?w=800" alt="Mobile App" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-blue-500 font-bold uppercase text-sm">View Project →</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 text-xs font-bold gradient-bg-2 text-white sharp-card uppercase">UI/UX</span>
+                            <span class="text-sm text-slate-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Mobile App Experience</h3>
+                        <p class="text-slate-400 text-sm">Complete mobile app with intuitive navigation</p>
+                    </div>
+                </div>
+
+                <div class="project-item branding group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-cyan-500 transition-all duration-500 hover-lift">
+                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                        <img src="https://images.unsplash.com/photo-1762787863004-767d5d7eac07?w=800" alt="Brand Identity" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-cyan-500 font-bold uppercase text-sm">View Project →</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 text-xs font-bold gradient-bg-3 text-white sharp-card uppercase">Brand</span>
+                            <span class="text-sm text-slate-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Brand Identity System</h3>
+                        <p class="text-slate-400 text-sm">Full brand development with guidelines</p>
+                    </div>
+                </div>
+
+                <div class="project-item uiux group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-orange-500 transition-all duration-500 hover-lift">
+                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                        <img src="https://images.unsplash.com/photo-1547027072-332f09bd6bb3?w=800" alt="Design System" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-orange-500 font-bold uppercase text-sm">View Project →</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 text-xs font-bold gradient-bg text-white sharp-card uppercase">UI/UX</span>
+                            <span class="text-sm text-slate-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Design System Library</h3>
+                        <p class="text-slate-400 text-sm">Comprehensive reusable component library</p>
+                    </div>
+                </div>
+
+                <div class="project-item web group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-blue-500 transition-all duration-500 hover-lift">
+                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                        <img src="https://images.unsplash.com/photo-1622513347372-25663cf6e309?w=800" alt="Creative Studio" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-blue-500 font-bold uppercase text-sm">View Project →</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 text-xs font-bold gradient-bg-2 text-white sharp-card uppercase">Web</span>
+                            <span class="text-sm text-slate-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Creative Studio Website</h3>
+                        <p class="text-slate-400 text-sm">Bold portfolio for design agency</p>
+                    </div>
+                </div>
+
+                <div class="project-item web group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-cyan-500 transition-all duration-500 hover-lift">
+                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                        <img src="https://images.unsplash.com/photo-1547027072-332f09bd6bb3?w=800" alt="E-commerce" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-cyan-500 font-bold uppercase text-sm">View Project →</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 text-xs font-bold gradient-bg-3 text-white sharp-card uppercase">Web</span>
+                            <span class="text-sm text-slate-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">E-commerce Platform</h3>
+                        <p class="text-slate-400 text-sm">Modern platform with product discovery focus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black text-white mb-4 uppercase tracking-tight">Expertise</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto mb-4"></div>
+                <p class="text-slate-400">Services and skills I offer</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group p-8 bg-slate-800 sharp-card border-2 border-slate-700 hover:border-orange-500 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 gradient-bg sharp-card flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 uppercase">UI/UX Design</h3>
+                    <p class="text-slate-400">Creating intuitive interfaces that users love</p>
+                </div>
+                
+                <div class="group p-8 bg-slate-800 sharp-card border-2 border-slate-700 hover:border-blue-500 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 gradient-bg-2 sharp-card flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 uppercase">Web Design</h3>
+                    <p class="text-slate-400">Modern websites that drive results</p>
+                </div>
+                
+                <div class="group p-8 bg-slate-800 sharp-card border-2 border-slate-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 gradient-bg-3 sharp-card flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 uppercase">Branding</h3>
+                    <p class="text-slate-400">Memorable brand identities that stand out</p>
+                </div>
+                
+                <div class="group p-8 bg-slate-800 sharp-card border-2 border-slate-700 hover:border-yellow-500 transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 sharp-card flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 uppercase">Illustration</h3>
+                    <p class="text-slate-400">Custom visuals for your brand</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black text-white mb-4 uppercase tracking-tight">About Me</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto mb-4"></div>
+                <p class="text-slate-400">Designer dedicated to creating meaningful digital experiences</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+                <div class="aspect-square sharp-card overflow-hidden border-2 border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1547027072-332f09bd6bb3?w=800" alt="Workspace" class="w-full h-full object-cover">
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-3xl font-black text-white mb-6 uppercase">Creative Designer & Problem Solver</h3>
+                    <div class="space-y-4 text-slate-300">
+                        <p>With over <span class="text-orange-500 font-bold">5 years of experience</span> in design, I specialize in creating intuitive and visually compelling digital experiences that bridge the gap between user needs and business goals.</p>
+                        <p>My approach combines user-centered design principles with modern aesthetics, ensuring that every project not only looks beautiful but also functions flawlessly.</p>
+                        <p>I've worked with <span class="text-cyan-500 font-bold">startups, agencies, and established brands</span>, helping them elevate their digital presence through thoughtful design.</p>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-2 gap-6">
+                        <div class="p-4 bg-slate-900 sharp-card border-l-4 border-orange-500">
+                            <p class="text-5xl font-black text-orange-500 mb-2">50+</p>
+                            <p class="text-slate-400 uppercase text-sm tracking-wider">Projects Done</p>
+                        </div>
+                        <div class="p-4 bg-slate-900 sharp-card border-l-4 border-cyan-500">
+                            <p class="text-5xl font-black text-cyan-500 mb-2">30+</p>
+                            <p class="text-slate-400 uppercase text-sm tracking-wider">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-3xl font-black text-white mb-8 text-center uppercase">Skills & Tools</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-8 bg-slate-900 sharp-card border-2 border-slate-700">
+                        <h4 class="text-xl font-bold text-orange-500 mb-4 uppercase">Design</h4>
+                        <ul class="space-y-2 text-slate-300">
+                            <li>• UI/UX Design</li>
+                            <li>• Visual Design</li>
+                            <li>• Interaction Design</li>
+                            <li>• Design Systems</li>
+                            <li>• Prototyping</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 bg-slate-900 sharp-card border-2 border-slate-700">
+                        <h4 class="text-xl font-bold text-blue-500 mb-4 uppercase">Tools</h4>
+                        <ul class="space-y-2 text-slate-300">
+                            <li>• Figma</li>
+                            <li>• Adobe Creative Suite</li>
+                            <li>• Sketch</li>
+                            <li>• Framer</li>
+                            <li>• InVision</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 bg-slate-900 sharp-card border-2 border-slate-700">
+                        <h4 class="text-xl font-bold text-cyan-500 mb-4 uppercase">Development</h4>
+                        <ul class="space-y-2 text-slate-300">
+                            <li>• HTML/CSS</li>
+                            <li>• React Basics</li>
+                            <li>• Tailwind CSS</li>
+                            <li>• Responsive Design</li>
+                            <li>• Web Standards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black text-white mb-4 uppercase tracking-tight">Get In Touch</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto mb-4"></div>
+                <p class="text-slate-400">Have a project in mind? Let's talk about it</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-6 uppercase">Let's Connect</h3>
+                        <p class="text-slate-300">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-6 bg-slate-800 sharp-card border-l-4 border-orange-500">
+                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <div>
+                            <p class="font-bold text-white uppercase text-sm">Email</p>
+                            <p class="text-slate-300">hello@example.com</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-white mb-4 uppercase">Follow Me</h4>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-12 h-12 flex items-center justify-center bg-orange-500 text-white sharp-card hover:bg-orange-600 transition-colors font-bold">
+                                Li
+                            </a>
+                            <a href="#" class="w-12 h-12 flex items-center justify-center bg-blue-500 text-white sharp-card hover:bg-blue-600 transition-colors font-bold">
+                                Tw
+                            </a>
+                            <a href="#" class="w-12 h-12 flex items-center justify-center bg-cyan-500 text-white sharp-card hover:bg-cyan-600 transition-colors font-bold">
+                                Ig
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-green-900 border-2 border-green-600 sharp-card">
+                        <p class="font-bold text-green-400 mb-2 uppercase">⚡ Available for Work</p>
+                        <p class="text-green-300 text-sm">Currently accepting freelance projects and full-time opportunities</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 p-8 sharp-card border-2 border-slate-700">
+                    <h3 class="text-2xl font-bold text-white mb-6 uppercase">Send Message</h3>
+                    <form onsubmit="handleSubmit(event)" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-white mb-2 uppercase text-sm font-bold">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-slate-900 border-2 border-slate-700 sharp-card text-white focus:border-orange-500 outline-none transition-colors" placeholder="Your name">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-white mb-2 uppercase text-sm font-bold">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-slate-900 border-2 border-slate-700 sharp-card text-white focus:border-orange-500 outline-none transition-colors" placeholder="your.email@example.com">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-white mb-2 uppercase text-sm font-bold">Message</label>
+                            <textarea id="message" name="message" required rows="6" class="w-full px-4 py-3 bg-slate-900 border-2 border-slate-700 sharp-card text-white focus:border-orange-500 outline-none transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 gradient-bg text-white sharp-card hover:shadow-2xl transition-all font-bold uppercase tracking-wider">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-2xl font-black uppercase tracking-tight">Portfolio</p>
+                    <p class="text-slate-500 mt-2">© 2026 All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-slate-400 hover:text-orange-500 transition-colors font-semibold">LinkedIn</a>
+                    <a href="#" class="text-slate-400 hover:text-orange-500 transition-colors font-semibold">Dribbble</a>
+                    <a href="#" class="text-slate-400 hover:text-orange-500 transition-colors font-semibold">Behance</a>
+                    <a href="#" class="text-slate-400 hover:text-orange-500 transition-colors font-semibold">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
