@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Portfolio - Professional</title>
+    <title>Nabiel Ischak - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
-
-<body class="bg-slate-900">
+<body class="bg-slate-950">
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-700">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <a href="#home" class="text-2xl font-bold text-white tracking-tight">PORTFOLIO</a>
+            <div class="flex items-center justify-between h-20">
+                <a href="#home" class="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+                    <span class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center text-white font-black">NI</span>
+                    <span>NABIEL ISCHAK</span>
+                </a>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-slate-300 hover:text-orange-500 transition-colors font-medium">HOME</a>
-                    <a href="#projects" class="text-slate-300 hover:text-orange-500 transition-colors font-medium">PROJECTS</a>
-                    <a href="#about" class="text-slate-300 hover:text-orange-500 transition-colors font-medium">ABOUT</a>
-                    <a href="#contact" class="text-slate-300 hover:text-orange-500 transition-colors font-medium">CONTACT</a>
+                    <a href="#home" class="nav-link text-slate-300 hover:text-orange-500 transition-all font-medium relative">HOME</a>
+                    <a href="#about" class="nav-link text-slate-300 hover:text-orange-500 transition-all font-medium relative">ABOUT</a>
+                    <a href="#work" class="nav-link text-slate-300 hover:text-orange-500 transition-all font-medium relative">WORK</a>
+                    <a href="#contact" class="px-6 py-2.5 gradient-bg text-white rounded-lg hover:shadow-lg hover:shadow-orange-500/30 transition-all font-semibold">CONTACT ME</a>
                 </div>
 
                 <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg hover:bg-slate-800 text-white">
@@ -34,389 +35,714 @@
             </div>
         </div>
 
-        <div id="mobileMenu" class="hidden md:hidden border-t border-slate-700 bg-slate-900">
+        <div id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-slate-950">
             <div class="px-4 py-4 space-y-3">
                 <a href="#home" class="block px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-orange-500">HOME</a>
-                <a href="#projects" class="block px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-orange-500">PROJECTS</a>
                 <a href="#about" class="block px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-orange-500">ABOUT</a>
-                <a href="#contact" class="block px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-orange-500">CONTACT</a>
+                <a href="#work" class="block px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-orange-500">WORK</a>
+                <a href="#skills" class="block px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-orange-500">SKILLS</a>
+                <a href="#contact" class="block px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-orange-500">CONTACT ME</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 overflow-hidden bg-slate-900">
-        <div class="absolute inset-0 animated-gradient opacity-30"></div>
-        <div class="absolute inset-0" style="background-image: linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px); background-size: 50px 50px;"></div>
-        <div class="absolute top-0 left-0 w-1 h-96 gradient-bg opacity-50"></div>
-        <div class="absolute bottom-0 right-0 w-96 h-1 gradient-bg opacity-50"></div>
-        
-        <div class="max-w-6xl mx-auto text-center relative z-10">
-            <div class="mb-6 fade-in-up">
-                <span class="inline-block px-6 py-2 sharp-card glass-dark text-orange-500 text-sm font-bold backdrop-blur-sm tracking-wider">
-                    ⚡ OPEN FOR OPPORTUNITIES
-                </span>
+    <section id="home" class="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 overflow-hidden bg-slate-950">
+        <!-- Animated Background -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900"></div>
+            <div class="absolute inset-0 opacity-30">
+                <div class="floating-circle absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500 rounded-full filter blur-3xl"></div>
+                <div class="floating-circle-delayed absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl"></div>
             </div>
-            <h1 class="text-5xl sm:text-6xl lg:text-8xl font-black mb-6 fade-in-up tracking-tight" style="animation-delay: 0.2s;">
-                <span class="text-white">NABIEL</span>
-                <br>
-                <span class="gradient-text">ISCHAK</span>
-            </h1>
-            <p class="text-xl sm:text-2xl text-slate-400 mb-10 max-w-3xl mx-auto leading-relaxed fade-in-up font-light" style="animation-delay: 0.4s;">
-                Building powerful digital experiences with <span class="text-orange-500 font-semibold">bold design</span> and <span class="text-cyan-500 font-semibold">innovative solutions</span>
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in-up" style="animation-delay: 0.6s;">
-                <a href="#projects" class="group inline-flex items-center justify-center px-8 py-4 gradient-bg text-white rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 font-bold text-lg uppercase tracking-wider sharp-card">
-                    View Projects
-                    <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                    </svg>
-                </a>
-                <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-orange-500 text-orange-500 rounded-lg hover:bg-orange-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1 font-bold text-lg uppercase tracking-wider sharp-card">
-                    Contact Me
-                </a>
+            <div class="grid-pattern"></div>
+            
+            <!-- Floating Shapes -->
+            <div class="floating-shape absolute top-20 left-10 w-20 h-20 border-2 border-orange-500/20 rounded-lg rotate-45"></div>
+            <div class="floating-shape-delayed absolute bottom-40 right-20 w-16 h-16 border-2 border-cyan-500/20 rounded-full"></div>
+            <div class="floating-shape-slow absolute top-1/2 right-1/4 w-24 h-24 border-2 border-blue-500/20 rounded-lg"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto w-full relative z-10 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Side - Text Content -->
+                <div class="order-2 lg:order-1 space-y-8">
+                    <div class="space-y-4 fade-in-up">
+                        <p class="text-xl text-slate-400 font-light slide-in-left">Hello, my name is</p>
+                        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-tight">
+                            <span class="text-white block slide-in-left">NABIEL</span>
+                            <span class="gradient-text block slide-in-left" style="animation-delay: 0.1s;">ISCHAK</span>
+                        </h1>
+                        <div class="flex items-center gap-2 text-2xl sm:text-3xl text-slate-300 font-light h-12">
+                            <span>I'm a</span>
+                            <span id="typed-text" class="gradient-text font-bold"></span>
+                            <span class="typing-cursor">|</span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-lg text-slate-400 leading-relaxed max-w-xl fade-in-up" style="animation-delay: 0.2s;">
+                        Crafting exceptional digital experiences with a focus on <span class="text-orange-500 font-semibold">innovation</span>, <span class="text-cyan-500 font-semibold">design excellence</span>, and <span class="text-blue-500 font-semibold">user satisfaction</span>.
+                    </p>
+                    
+                    <!-- Social Media Buttons -->
+                    <div class="flex flex-wrap gap-3 fade-in-up" style="animation-delay: 0.4s;">
+                        <a href="mailto:nabielischak@gmail.com" class="group flex items-center gap-2 px-5 py-3 bg-slate-900 border border-slate-800 text-slate-300 rounded-lg hover:border-orange-500 hover:text-white transition-all duration-300 font-medium hover:scale-105">
+                            <svg class="w-5 h-5 group-hover:text-orange-500 transition-colors" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                            Gmail
+                        </a>
+                        <a href="https://instagram.com/nabielischak" target="_blank" class="group flex items-center gap-2 px-5 py-3 bg-slate-900 border border-slate-800 text-slate-300 rounded-lg hover:border-orange-500 hover:text-white transition-all duration-300 font-medium hover:scale-105">
+                            <svg class="w-5 h-5 group-hover:text-orange-500 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="https://linkedin.com/in/nabielischak" target="_blank" class="group flex items-center gap-2 px-5 py-3 bg-slate-900 border border-slate-800 text-slate-300 rounded-lg hover:border-orange-500 hover:text-white transition-all duration-300 font-medium hover:scale-105">
+                            <svg class="w-5 h-5 group-hover:text-orange-500 transition-colors" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap gap-4 fade-in-up" style="animation-delay: 0.6s;">
+                        <a href="#" onclick="downloadCV()" class="group flex items-center gap-2 px-8 py-4 gradient-bg text-white rounded-lg hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-0.5 font-bold text-base">
+                            <svg class="w-5 h-5 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            Download CV
+                        </a>
+                        <a href="#work" class="flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-orange-500/30 text-slate-300 rounded-lg hover:border-orange-500 hover:bg-orange-500/5 transition-all duration-300 transform hover:-translate-y-0.5 font-bold text-base">
+                            View My Work
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side - Profile Image -->
+                <div class="order-1 lg:order-2 flex justify-center lg:justify-end fade-in-up parallax-element" style="animation-delay: 0.3s;" data-speed="2">
+                    <div class="relative">
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-orange-500 rounded-tl-3xl animate-border-spin"></div>
+                        <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-cyan-500 rounded-br-3xl animate-border-spin-reverse"></div>
+                        
+                        <!-- Profile Card -->
+                        <div class="relative tilt-card">
+                            <div class="w-72 h-72 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px] rounded-2xl overflow-hidden border-2 border-slate-800 shadow-2xl bg-slate-900 hover:shadow-orange-500/20 transition-all duration-500">
+                                <img src="1000280878.jpg.jpeg" alt="Nabiel Ischak" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto fade-in-up" style="animation-delay: 0.8s;">
-                <div class="text-center">
-                    <p class="text-4xl font-black text-orange-500 mb-2">50+</p>
-                    <p class="text-slate-400 text-sm uppercase tracking-wider">Projects</p>
-                </div>
-                <div class="text-center">
-                    <p class="text-4xl font-black text-cyan-500 mb-2">5+</p>
-                    <p class="text-slate-400 text-sm uppercase tracking-wider">Years Exp</p>
-                </div>
-                <div class="text-center">
-                    <p class="text-4xl font-black text-blue-500 mb-2">30+</p>
-                    <p class="text-slate-400 text-sm uppercase tracking-wider">Clients</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Projects Section -->
-    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-5xl font-black text-white mb-4 uppercase tracking-tight">Featured Work</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto mb-4"></div>
-                <p class="text-slate-400">Selected projects that showcase my expertise</p>
-            </div>
-
-            <div class="flex flex-wrap justify-center gap-3 mb-12">
-                <button onclick="filterProjects('all', event)" class="filter-btn px-6 py-3 sharp-card gradient-bg text-white font-bold uppercase text-sm tracking-wider transition-all">
-                    All
-                </button>
-                <button onclick="filterProjects('web', event)" class="filter-btn px-6 py-3 sharp-card bg-slate-700 text-slate-300 hover:bg-slate-600 font-bold uppercase text-sm tracking-wider transition-all">
-                    Web Design
-                </button>
-                <button onclick="filterProjects('uiux', event)" class="filter-btn px-6 py-3 sharp-card bg-slate-700 text-slate-300 hover:bg-slate-600 font-bold uppercase text-sm tracking-wider transition-all">
-                    UI/UX
-                </button>
-                <button onclick="filterProjects('branding', event)" class="filter-btn px-6 py-3 sharp-card bg-slate-700 text-slate-300 hover:bg-slate-600 font-bold uppercase text-sm tracking-wider transition-all">
-                    Branding
-                </button>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="project-item web group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-orange-500 transition-all duration-500 hover-lift">
-                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
-                        <img src="https://images.unsplash.com/photo-1764601842171-3d6fba7c3830?w=800" alt="Modern Web Platform" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-orange-500 font-bold uppercase text-sm">View Project →</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 text-xs font-bold gradient-bg text-white sharp-card uppercase">Web</span>
-                            <span class="text-sm text-slate-500">2026</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Modern Web Platform</h3>
-                        <p class="text-slate-400 text-sm">SaaS platform redesign focusing on user experience</p>
-                    </div>
-                </div>
-
-                <div class="project-item uiux group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-blue-500 transition-all duration-500 hover-lift">
-                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
-                        <img src="https://images.unsplash.com/photo-1707836868495-3307d371aba4?w=800" alt="Mobile App" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-blue-500 font-bold uppercase text-sm">View Project →</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 text-xs font-bold gradient-bg-2 text-white sharp-card uppercase">UI/UX</span>
-                            <span class="text-sm text-slate-500">2026</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Mobile App Experience</h3>
-                        <p class="text-slate-400 text-sm">Complete mobile app with intuitive navigation</p>
-                    </div>
-                </div>
-
-                <div class="project-item branding group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-cyan-500 transition-all duration-500 hover-lift">
-                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
-                        <img src="https://images.unsplash.com/photo-1762787863004-767d5d7eac07?w=800" alt="Brand Identity" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-cyan-500 font-bold uppercase text-sm">View Project →</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 text-xs font-bold gradient-bg-3 text-white sharp-card uppercase">Brand</span>
-                            <span class="text-sm text-slate-500">2025</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Brand Identity System</h3>
-                        <p class="text-slate-400 text-sm">Full brand development with guidelines</p>
-                    </div>
-                </div>
-
-                <div class="project-item uiux group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-orange-500 transition-all duration-500 hover-lift">
-                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
-                        <img src="https://images.unsplash.com/photo-1547027072-332f09bd6bb3?w=800" alt="Design System" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-orange-500 font-bold uppercase text-sm">View Project →</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 text-xs font-bold gradient-bg text-white sharp-card uppercase">UI/UX</span>
-                            <span class="text-sm text-slate-500">2025</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Design System Library</h3>
-                        <p class="text-slate-400 text-sm">Comprehensive reusable component library</p>
-                    </div>
-                </div>
-
-                <div class="project-item web group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-blue-500 transition-all duration-500 hover-lift">
-                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
-                        <img src="https://images.unsplash.com/photo-1622513347372-25663cf6e309?w=800" alt="Creative Studio" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-blue-500 font-bold uppercase text-sm">View Project →</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 text-xs font-bold gradient-bg-2 text-white sharp-card uppercase">Web</span>
-                            <span class="text-sm text-slate-500">2025</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Creative Studio Website</h3>
-                        <p class="text-slate-400 text-sm">Bold portfolio for design agency</p>
-                    </div>
-                </div>
-
-                <div class="project-item web group bg-slate-900 sharp-card overflow-hidden border-2 border-slate-700 hover:border-cyan-500 transition-all duration-500 hover-lift">
-                    <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
-                        <img src="https://images.unsplash.com/photo-1547027072-332f09bd6bb3?w=800" alt="E-commerce" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-cyan-500 font-bold uppercase text-sm">View Project →</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 text-xs font-bold gradient-bg-3 text-white sharp-card uppercase">Web</span>
-                            <span class="text-sm text-slate-500">2025</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">E-commerce Platform</h3>
-                        <p class="text-slate-400 text-sm">Modern platform with product discovery focus</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-5xl font-black text-white mb-4 uppercase tracking-tight">Expertise</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto mb-4"></div>
-                <p class="text-slate-400">Services and skills I offer</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="group p-8 bg-slate-800 sharp-card border-2 border-slate-700 hover:border-orange-500 transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-16 h-16 gradient-bg sharp-card flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3 uppercase">UI/UX Design</h3>
-                    <p class="text-slate-400">Creating intuitive interfaces that users love</p>
-                </div>
-                
-                <div class="group p-8 bg-slate-800 sharp-card border-2 border-slate-700 hover:border-blue-500 transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-16 h-16 gradient-bg-2 sharp-card flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3 uppercase">Web Design</h3>
-                    <p class="text-slate-400">Modern websites that drive results</p>
-                </div>
-                
-                <div class="group p-8 bg-slate-800 sharp-card border-2 border-slate-700 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-16 h-16 gradient-bg-3 sharp-card flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3 uppercase">Branding</h3>
-                    <p class="text-slate-400">Memorable brand identities that stand out</p>
-                </div>
-                
-                <div class="group p-8 bg-slate-800 sharp-card border-2 border-slate-700 hover:border-yellow-500 transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 sharp-card flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3 uppercase">Illustration</h3>
-                    <p class="text-slate-400">Custom visuals for your brand</p>
-                </div>
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#about" class="flex flex-col items-center gap-2 text-slate-500 hover:text-orange-500 transition-colors">
+                    <span class="text-xs font-medium tracking-wider">SCROLL DOWN</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-5xl font-black text-white mb-4 uppercase tracking-tight">About Me</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto mb-4"></div>
-                <p class="text-slate-400">Designer dedicated to creating meaningful digital experiences</p>
+    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900 relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-orange-500/5 to-transparent"></div>
+        <div class="floating-shape absolute top-40 right-40 w-32 h-32 border-2 border-orange-500/10 rounded-full"></div>
+        <div class="floating-shape-delayed absolute bottom-20 left-20 w-24 h-24 border-2 border-cyan-500/10 rounded-lg rotate-45"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-20">
+                <span class="inline-block px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full text-orange-500 text-sm font-semibold tracking-wider mb-4">
+                    ABOUT ME
+                </span>
+                <h2 class="text-4xl sm:text-5xl font-black text-white mb-4">Who I Am</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto"></div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-                <div class="aspect-square sharp-card overflow-hidden border-2 border-slate-700">
-                    <img src="https://images.unsplash.com/photo-1547027072-332f09bd6bb3?w=800" alt="Workspace" class="w-full h-full object-cover">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20 items-center">
+                <div class="rounded-2xl overflow-hidden border-2 border-slate-800 shadow-2xl hover:border-orange-500 transition-all duration-500 hover:shadow-orange-500/20 parallax-element" data-speed="1">
+                    <img src="1000280878.jpg.jpeg" alt="Workspace" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                 </div>
 
-                <div class="flex flex-col justify-center">
-                    <h3 class="text-3xl font-black text-white mb-6 uppercase">Creative Designer & Problem Solver</h3>
-                    <div class="space-y-4 text-slate-300">
+                <div class="space-y-6 stagger-fade-in">
+                    <h3 class="text-3xl font-black text-white">Creative Designer & Problem Solver</h3>
+                    <div class="w-16 h-1 gradient-bg"></div>
+                    <div class="space-y-4 text-slate-300 leading-relaxed text-lg">
                         <p>With over <span class="text-orange-500 font-bold">5 years of experience</span> in design, I specialize in creating intuitive and visually compelling digital experiences that bridge the gap between user needs and business goals.</p>
                         <p>My approach combines user-centered design principles with modern aesthetics, ensuring that every project not only looks beautiful but also functions flawlessly.</p>
-                        <p>I've worked with <span class="text-cyan-500 font-bold">startups, agencies, and established brands</span>, helping them elevate their digital presence through thoughtful design.</p>
+                        <p>I've successfully collaborated with <span class="text-cyan-500 font-bold">startups, agencies, and established brands</span>, helping them elevate their digital presence through thoughtful and strategic design solutions.</p>
                     </div>
 
-                    <div class="mt-8 grid grid-cols-2 gap-6">
-                        <div class="p-4 bg-slate-900 sharp-card border-l-4 border-orange-500">
-                            <p class="text-5xl font-black text-orange-500 mb-2">50+</p>
-                            <p class="text-slate-400 uppercase text-sm tracking-wider">Projects Done</p>
+                    <div class="grid grid-cols-3 gap-4 pt-6">
+                        <div class="bg-slate-950 rounded-xl p-6 border-l-4 border-orange-500 hover:bg-slate-800/50 transition-all hover-lift-subtle">
+                            <p class="text-4xl font-black text-orange-500 mb-2">50+</p>
+                            <p class="text-slate-400 font-medium text-sm">Projects</p>
                         </div>
-                        <div class="p-4 bg-slate-900 sharp-card border-l-4 border-cyan-500">
-                            <p class="text-5xl font-black text-cyan-500 mb-2">30+</p>
-                            <p class="text-slate-400 uppercase text-sm tracking-wider">Happy Clients</p>
+                        <div class="bg-slate-950 rounded-xl p-6 border-l-4 border-cyan-500 hover:bg-slate-800/50 transition-all hover-lift-subtle">
+                            <p class="text-4xl font-black text-cyan-500 mb-2">30+</p>
+                            <p class="text-slate-400 font-medium text-sm">Clients</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-3xl font-black text-white mb-8 text-center uppercase">Skills & Tools</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="p-8 bg-slate-900 sharp-card border-2 border-slate-700">
-                        <h4 class="text-xl font-bold text-orange-500 mb-4 uppercase">Design</h4>
-                        <ul class="space-y-2 text-slate-300">
-                            <li>• UI/UX Design</li>
-                            <li>• Visual Design</li>
-                            <li>• Interaction Design</li>
-                            <li>• Design Systems</li>
-                            <li>• Prototyping</li>
-                        </ul>
-                    </div>
-                    <div class="p-8 bg-slate-900 sharp-card border-2 border-slate-700">
-                        <h4 class="text-xl font-bold text-blue-500 mb-4 uppercase">Tools</h4>
-                        <ul class="space-y-2 text-slate-300">
-                            <li>• Figma</li>
-                            <li>• Adobe Creative Suite</li>
-                            <li>• Sketch</li>
-                            <li>• Framer</li>
-                            <li>• InVision</li>
-                        </ul>
-                    </div>
-                    <div class="p-8 bg-slate-900 sharp-card border-2 border-slate-700">
-                        <h4 class="text-xl font-bold text-cyan-500 mb-4 uppercase">Development</h4>
-                        <ul class="space-y-2 text-slate-300">
-                            <li>• HTML/CSS</li>
-                            <li>• React Basics</li>
-                            <li>• Tailwind CSS</li>
-                            <li>• Responsive Design</li>
-                            <li>• Web Standards</li>
-                        </ul>
+                        <div class="bg-slate-950 rounded-xl p-6 border-l-4 border-blue-500 hover:bg-slate-800/50 transition-all hover-lift-subtle">
+                            <p class="text-4xl font-black text-blue-500 mb-2">11</p>
+                            <p class="text-slate-400 font-medium text-sm">Certificates</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Work Section (Projects, Certifications, Tech Stack) -->
+    <section id="work" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-950 relative overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-cyan-500/5 to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-20">
+                <span class="inline-block px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full text-orange-500 text-sm font-semibold tracking-wider mb-4">
+                    PORTFOLIO
+                </span>
+                <h2 class="text-4xl sm:text-5xl font-black text-white mb-4">My Work</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto mb-6"></div>
+                <p class="text-slate-400 text-lg">Projects, certifications, and technologies I work with</p>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="flex flex-wrap justify-center gap-3 mb-16">
+                <button onclick="switchTab('projects')" class="tab-btn active px-6 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold text-sm transition-all hover:shadow-lg hover:shadow-orange-500/30">
+                    Projects
+                </button>
+                <button onclick="switchTab('certifications')" class="tab-btn px-6 py-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-orange-500 hover:text-white font-semibold text-sm transition-all">
+                    Certifications
+                </button>
+                <button onclick="switchTab('tech-stack')" class="tab-btn px-6 py-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:border-orange-500 hover:text-white font-semibold text-sm transition-all">
+                    Tech Stack
+                </button>
+            </div>
+
+            <!-- Projects Tab Content -->
+            <div id="projects-content" class="tab-content">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-orange-500 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/20">
+                        <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                            <img src="https://images.unsplash.com/photo-1764601842171-3d6fba7c3830?w=800" alt="Modern Web Platform" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-6">
+                                <span class="text-orange-500 font-bold text-sm flex items-center gap-2">
+                                    View Project 
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-orange-500 transition-colors">Modern Web Platform</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">SaaS platform redesign focusing on user experience</p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-500 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20">
+                        <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                            <img src="https://images.unsplash.com/photo-1707836868495-3307d371aba4?w=800" alt="Mobile App" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-6">
+                                <span class="text-blue-500 font-bold text-sm flex items-center gap-2">
+                                    View Project 
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-500 transition-colors">Mobile App Experience</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Complete mobile app with intuitive navigation</p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/20">
+                        <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                            <img src="https://images.unsplash.com/photo-1762787863004-767d5d7eac07?w=800" alt="Brand Identity" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-6">
+                                <span class="text-cyan-500 font-bold text-sm flex items-center gap-2">
+                                    View Project 
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-500 transition-colors">Brand Identity System</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Full brand development with guidelines</p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-orange-500 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/20">
+                        <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                            <img src="https://images.unsplash.com/photo-1547027072-332f09bd6bb3?w=800" alt="Design System" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-6">
+                                <span class="text-orange-500 font-bold text-sm flex items-center gap-2">
+                                    View Project 
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-orange-500 transition-colors">Design System Library</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Comprehensive reusable component library</p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-500 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20">
+                        <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                            <img src="https://images.unsplash.com/photo-1622513347372-25663cf6e309?w=800" alt="Creative Studio" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-6">
+                                <span class="text-blue-500 font-bold text-sm flex items-center gap-2">
+                                    View Project 
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-500 transition-colors">Creative Studio Website</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Bold portfolio for design agency</p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/20">
+                        <div class="aspect-[4/3] overflow-hidden bg-slate-800 relative">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="E-commerce" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-6">
+                                <span class="text-cyan-500 font-bold text-sm flex items-center gap-2">
+                                    View Project 
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-500 transition-colors">E-commerce Platform</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Modern platform with product discovery focus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Tab Content -->
+            <div id="certifications-content" class="tab-content hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-orange-500 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-1">UI/UX Design Professional</h3>
+                                <p class="text-slate-400 text-sm mb-2">Google UX Design Certificate</p>
+                                <span class="text-xs text-slate-500">2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-blue-500 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 gradient-bg-2 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-1">Web Development</h3>
+                                <p class="text-slate-400 text-sm mb-2">Meta Front-End Developer</p>
+                                <span class="text-xs text-slate-500">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 gradient-bg-3 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-1">Responsive Web Design</h3>
+                                <p class="text-slate-400 text-sm mb-2">freeCodeCamp</p>
+                                <span class="text-xs text-slate-500">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-orange-500 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-1">JavaScript Algorithms</h3>
+                                <p class="text-slate-400 text-sm mb-2">freeCodeCamp</p>
+                                <span class="text-xs text-slate-500">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-blue-500 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 gradient-bg-2 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-1">React Development</h3>
+                                <p class="text-slate-400 text-sm mb-2">Udemy</p>
+                                <span class="text-xs text-slate-500">2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 gradient-bg-3 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-1">Adobe Creative Cloud</h3>
+                                <p class="text-slate-400 text-sm mb-2">Adobe Certified Professional</p>
+                                <span class="text-xs text-slate-500">2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add 5 more to reach 11 total -->
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-orange-500 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-1">Figma Advanced</h3>
+                                <p class="text-slate-400 text-sm mb-2">Coursera</p>
+                                <span class="text-xs text-slate-500">2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-blue-500 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 gradient-bg-2 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-1">Tailwind CSS Mastery</h3>
+                                <p class="text-slate-400 text-sm mb-2">Scrimba</p>
+                                <span class="text-xs text-slate-500">2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 gradient-bg-3 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-1">Git & GitHub</h3>
+                                <p class="text-slate-400 text-sm mb-2">LinkedIn Learning</p>
+                                <span class="text-xs text-slate-500">2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-orange-500 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-1">Design Thinking</h3>
+                                <p class="text-slate-400 text-sm mb-2">IDEO U</p>
+                                <span class="text-xs text-slate-500">2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-blue-500 transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 gradient-bg-2 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-1">User Research</h3>
+                                <p class="text-slate-400 text-sm mb-2">Nielsen Norman Group</p>
+                                <span class="text-xs text-slate-500">2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack Tab Content -->
+            <div id="tech-stack-content" class="tab-content hidden">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-orange-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 18.178l-4.62-1.256-.328-3.544h2.27l.158 1.844 2.52.667 2.52-.667.26-2.866H6.96l-.635-6.678h11.35l-.227 2.21H8.822l.204 2.256h8.217l-.624 6.778L12 18.178zM3 2h18l-1.623 18L12 22l-7.377-2L3 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">HTML5</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-blue-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M1.5 1.5l2.076 23.09L11.7 27l8.143-2.41L22 1.5zm14.613 10.4l-.42 4.66-4.192 1.17-4.193-1.17-.29-3.118h2.058l.14 1.55 2.284.62 2.284-.62.24-2.56H6.934l-.62-6.924h11.37l-.21 2.18H9.617l.21 2.18z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">CSS3</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-cyan-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18.5 9.51a4.22 4.22 0 01-1.91-1.34A5.77 5.77 0 0015 6.13a13.87 13.87 0 00-2.37-.27 11.72 11.72 0 00-2.37.27 5.77 5.77 0 00-1.59 2.04A4.22 4.22 0 017 9.51c0 .39.04.79.11 1.19.07.39.19.78.35 1.18.16.39.36.79.6 1.18.24.39.54.78.88 1.17.35.4.75.78 1.19 1.17.45.39.94.78 1.47 1.17a21.4 21.4 0 012.55 2.04c.4.33.81.66 1.23.99.42.33.85.66 1.28.99a13.65 13.65 0 001.35 1.08c.42.28.83.56 1.23.84.41.28.77.56 1.1.84.32.28.59.56.8.84.2.28.35.56.42.84.07.28.08.55 0 .84-.08.28-.24.56-.48.84-.24.28-.57.56-.99.84-.42.28-.96.56-1.62.84-.67.28-1.47.56-2.42.84-.95.28-2.07.56-3.37.84-1.3.28-2.79.56-4.47.84-.09 0-.18-.01-.28-.02-.09-.01-.19-.03-.28-.06a5.38 5.38 0 01-.84-.28c-.28-.11-.55-.25-.84-.42a5.38 5.38 0 01-.84-.56c-.28-.22-.55-.47-.84-.74a13.16 13.16 0 01-.84-.99 18.38 18.38 0 01-.84-1.23 29.82 29.82 0 01-.84-1.47 36.1 36.1 0 01-.84-1.71c-.28-.59-.56-1.21-.84-1.85-.28-.64-.56-1.3-.84-1.97-.28-.67-.56-1.37-.84-2.09-.28-.73-.56-1.47-.84-2.23-.28-.77-.56-1.56-.84-2.37-.28-.81-.56-1.65-.84-2.51-.28-.86-.56-1.75-.84-2.67-.28-.93-.56-1.88-.84-2.86-.28-.98-.56-2-.84-3.05-.28-1.05-.56-2.14-.84-3.26-.28-1.12-.56-2.28-.84-3.49-.28-1.2-.56-2.46-.84-3.76-.28-1.3-.56-2.65-.84-4.06-.28-1.41-.56-2.87-.84-4.38-.28-1.51-.56-3.08-.84-4.72V2.48H3.54L3 6.13l1.6 14.4-1.07 1.6V24z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">Tailwind CSS</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-yellow-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">JavaScript</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-cyan-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.23 12.004a2.236 2.236 0 01-2.235 2.236 2.236 2.236 0 112.235-2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.167 2.167 0 00-1.092-.278z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">React</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-green-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M11.998 0c-1.58 0-2.867 1.288-2.867 2.867 0 1.58 1.287 2.867 2.867 2.867 1.58 0 2.867-1.287 2.867-2.867 0-1.579-1.287-2.867-2.867-2.867zm7.415 2.867c0-1.58-1.288-2.867-2.867-2.867s-2.867 1.288-2.867 2.867c0 1.58 1.288 2.867 2.867 2.867s2.867-1.287 2.867-2.867zM4.585 2.867C4.585 1.288 3.297 0 1.718 0S-1.149 1.288-1.149 2.867c0 1.58 1.288 2.867 2.867 2.867s2.867-1.287 2.867-2.867zM12 24c-1.58 0-2.867-1.288-2.867-2.867 0-1.58 1.287-2.867 2.867-2.867 1.58 0 2.867 1.287 2.867 2.867C14.867 22.712 13.58 24 12 24zm0-7.415c-1.58 0-2.867-1.288-2.867-2.867 0-1.58 1.287-2.867 2.867-2.867 1.58 0 2.867 1.287 2.867 2.867 0 1.579-1.287 2.867-2.867 2.867z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">Figma</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-orange-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M7.8 2C4.3 2 2 4.3 2 7.8c0 3.5 2.3 5.8 5.8 5.8h5.8v-5.8C13.6 4.3 11.3 2 7.8 2zm0 10.3c-3.5 0-5.8 2.3-5.8 5.8S4.3 24 7.8 24s5.8-2.3 5.8-5.8v-5.9H7.8zm8.4-5.8c0-3.5 2.3-5.8 5.8-5.8s5.8 2.3 5.8 5.8-2.3 5.8-5.8 5.8h-5.8V6.5zm-2.6 8.4h5.8c3.5 0 5.8 2.3 5.8 5.8S22.9 24 19.4 24s-5.8-2.3-5.8-5.8v-5.8z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">Adobe XD</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-purple-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">Photoshop</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-orange-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">Illustrator</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-red-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">Git</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-blue-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">VS Code</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:border-green-500 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.990,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.570,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-white font-bold">Node.js</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
     <!-- Contact Section -->
-    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-5xl font-black text-white mb-4 uppercase tracking-tight">Get In Touch</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto mb-4"></div>
-                <p class="text-slate-400">Have a project in mind? Let's talk about it</p>
+    <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-950 relative overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-cyan-500/5 to-transparent"></div>
+        
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-20">
+                <span class="inline-block px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full text-orange-500 text-sm font-semibold tracking-wider mb-4">
+                    GET IN TOUCH
+                </span>
+                <h2 class="text-4xl sm:text-5xl font-black text-white mb-4">Let's Work Together</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto mb-6"></div>
+                <p class="text-slate-400 text-lg">Have a project in mind? Let's make it happen</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div class="space-y-8">
                     <div>
-                        <h3 class="text-2xl font-bold text-white mb-6 uppercase">Let's Connect</h3>
-                        <p class="text-slate-300">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                        <h3 class="text-2xl font-bold text-white mb-4">Let's Connect</h3>
+                        <p class="text-slate-300 leading-relaxed text-lg">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
                     </div>
 
-                    <div class="flex items-center gap-4 p-6 bg-slate-800 sharp-card border-l-4 border-orange-500">
-                        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
+                    <div class="flex items-center gap-4 p-6 bg-slate-900 rounded-xl border border-slate-800 hover:border-orange-500 transition-all">
+                        <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
                         <div>
-                            <p class="font-bold text-white uppercase text-sm">Email</p>
-                            <p class="text-slate-300">hello@example.com</p>
+                            <p class="font-bold text-white text-sm mb-1">EMAIL</p>
+                            <p class="text-slate-300">nabielischak@gmail.com</p>
                         </div>
                     </div>
 
                     <div>
-                        <h4 class="font-bold text-white mb-4 uppercase">Follow Me</h4>
+                        <h4 class="font-bold text-white mb-4">Follow Me</h4>
                         <div class="flex gap-4">
-                            <a href="#" class="w-12 h-12 flex items-center justify-center bg-orange-500 text-white sharp-card hover:bg-orange-600 transition-colors font-bold">
-                                Li
+                            <a href="https://linkedin.com/in/nabielischak" target="_blank" class="w-14 h-14 flex items-center justify-center bg-slate-900 border border-slate-800 text-slate-400 rounded-xl hover:border-orange-500 hover:text-orange-500 transition-all hover:-translate-y-1">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                                </svg>
                             </a>
-                            <a href="#" class="w-12 h-12 flex items-center justify-center bg-blue-500 text-white sharp-card hover:bg-blue-600 transition-colors font-bold">
-                                Tw
+                            <a href="mailto:nabielischak@gmail.com" class="w-14 h-14 flex items-center justify-center bg-slate-900 border border-slate-800 text-slate-400 rounded-xl hover:border-orange-500 hover:text-orange-500 transition-all hover:-translate-y-1">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                </svg>
                             </a>
-                            <a href="#" class="w-12 h-12 flex items-center justify-center bg-cyan-500 text-white sharp-card hover:bg-cyan-600 transition-colors font-bold">
-                                Ig
+                            <a href="https://instagram.com/nabielischak" target="_blank" class="w-14 h-14 flex items-center justify-center bg-slate-900 border border-slate-800 text-slate-400 rounded-xl hover:border-orange-500 hover:text-orange-500 transition-all hover:-translate-y-1">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
                             </a>
                         </div>
                     </div>
 
-                    <div class="p-6 bg-green-900 border-2 border-green-600 sharp-card">
-                        <p class="font-bold text-green-400 mb-2 uppercase">⚡ Available for Work</p>
+                    <div class="p-6 bg-gradient-to-r from-green-900/50 to-emerald-900/50 border border-green-600/50 rounded-xl">
+                        <p class="font-bold text-green-400 mb-2 flex items-center gap-2">
+                            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                            Available for Work
+                        </p>
                         <p class="text-green-300 text-sm">Currently accepting freelance projects and full-time opportunities</p>
                     </div>
                 </div>
 
-                <div class="bg-slate-800 p-8 sharp-card border-2 border-slate-700">
-                    <h3 class="text-2xl font-bold text-white mb-6 uppercase">Send Message</h3>
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+                    <h3 class="text-2xl font-bold text-white mb-6">Send a Message</h3>
                     <form onsubmit="handleSubmit(event)" class="space-y-6">
                         <div>
-                            <label for="name" class="block text-white mb-2 uppercase text-sm font-bold">Name</label>
-                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-slate-900 border-2 border-slate-700 sharp-card text-white focus:border-orange-500 outline-none transition-colors" placeholder="Your name">
+                            <label for="name" class="block text-white mb-2 font-semibold text-sm">Your Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg text-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all" placeholder="John Doe">
                         </div>
 
                         <div>
-                            <label for="email" class="block text-white mb-2 uppercase text-sm font-bold">Email</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-slate-900 border-2 border-slate-700 sharp-card text-white focus:border-orange-500 outline-none transition-colors" placeholder="your.email@example.com">
+                            <label for="email" class="block text-white mb-2 font-semibold text-sm">Your Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg text-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all" placeholder="john@example.com">
                         </div>
 
                         <div>
-                            <label for="message" class="block text-white mb-2 uppercase text-sm font-bold">Message</label>
-                            <textarea id="message" name="message" required rows="6" class="w-full px-4 py-3 bg-slate-900 border-2 border-slate-700 sharp-card text-white focus:border-orange-500 outline-none transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
+                            <label for="message" class="block text-white mb-2 font-semibold text-sm">Your Message</label>
+                            <textarea id="message" name="message" required rows="6" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg text-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all resize-none" placeholder="Tell me about your project..."></textarea>
                         </div>
 
-                        <button type="submit" class="w-full py-4 gradient-bg text-white sharp-card hover:shadow-2xl transition-all font-bold uppercase tracking-wider">
+                        <button type="submit" class="w-full py-4 gradient-bg text-white rounded-lg hover:shadow-xl hover:shadow-orange-500/30 transition-all font-bold text-base flex items-center justify-center gap-2 group">
                             Send Message
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
                         </button>
                     </form>
                 </div>
@@ -425,24 +751,25 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-12 border-t border-slate-800">
+    <footer class="bg-black text-white py-12 border-t border-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <p class="text-2xl font-black uppercase tracking-tight">Portfolio</p>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <p class="text-xl font-bold flex items-center gap-2 justify-center md:justify-start">
+                        <span class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center text-white text-sm font-black">NI</span>
+                        NABIEL ISCHAK
+                    </p>
                     <p class="text-slate-500 mt-2">© 2026 All rights reserved.</p>
                 </div>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-slate-400 hover:text-orange-500 transition-colors font-semibold">LinkedIn</a>
-                    <a href="#" class="text-slate-400 hover:text-orange-500 transition-colors font-semibold">Dribbble</a>
-                    <a href="#" class="text-slate-400 hover:text-orange-500 transition-colors font-semibold">Behance</a>
-                    <a href="#" class="text-slate-400 hover:text-orange-500 transition-colors font-semibold">Instagram</a>
+                    <a href="https://linkedin.com/in/nabielischak" target="_blank" class="text-slate-400 hover:text-orange-500 transition-colors font-medium">LinkedIn</a>
+                    <a href="mailto:nabielischak@gmail.com" class="text-slate-400 hover:text-orange-500 transition-colors font-medium">Gmail</a>
+                    <a href="https://instagram.com/nabielischak" target="_blank" class="text-slate-400 hover:text-orange-500 transition-colors font-medium">Instagram</a>
                 </div>
             </div>
         </div>
     </footer>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
